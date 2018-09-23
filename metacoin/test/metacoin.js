@@ -5,7 +5,7 @@ contract('MetaCoin', function(accounts) {
     return MetaCoin.deployed().then(function(instance) {
       return instance.getBalance.call(accounts[0]);
     }).then(function(balance) {
-      assert.equal(balance.valueOf(), 10001, "10001 wasn't in the first account");
+      assert.equal(balance.valueOf(), 10000, "10000 wasn't in the first account");
     });
   });
   it("should call a function that depends on a linked library", function() {
