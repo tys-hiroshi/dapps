@@ -76,3 +76,64 @@ BigNumber { s: 1, e: 3, c: [ 1000 ] }
 ```
 
 If you send over coin(ex: 9500), it's failed.
+
+## test
+
+```
+truffle(develop)> test
+Using network 'develop'.
+
+Compiling ./contracts/ConvertLib.sol...
+Compiling ./contracts/MetaCoin.sol...
+Compiling ./test/TestMetacoin.sol...
+Compiling truffle/Assert.sol...
+Compiling truffle/DeployedAddresses.sol...
+
+
+  TestMetacoin
+    ✓ testInitialBalanceUsingDeployedContract (61ms)
+    ✓ testInitialBalanceWithNewMetaCoin (54ms)
+
+  Contract: MetaCoin
+    ✓ should put 10000 MetaCoin in the first account
+    ✓ should call a function that depends on a linked library
+    ✓ should send coin correctly (96ms)
+
+
+  5 passing (902ms)
+
+truffle(develop)> test
+Using network 'develop'.
+
+Compiling ./contracts/ConvertLib.sol...
+Compiling ./contracts/MetaCoin.sol...
+Compiling ./test/TestMetacoin.sol...
+Compiling truffle/Assert.sol...
+Compiling truffle/DeployedAddresses.sol...
+
+
+  TestMetacoin
+    ✓ testInitialBalanceUsingDeployedContract (53ms)
+    ✓ testInitialBalanceWithNewMetaCoin (111ms)
+
+  Contract: MetaCoin
+    1) should put 10000 MetaCoin in the first account
+    > No events were emitted
+    ✓ should call a function that depends on a linked library
+    ✓ should send coin correctly (75ms)
+
+
+  4 passing (933ms)
+  1 failing
+
+  1) Contract: MetaCoin
+       should put 10000 MetaCoin in the first account:
+     AssertionError: 10001 wasn't in the first account: expected '10000' to equal 10001
+      at test/metacoin.js:8:14
+      at <anonymous>
+      at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+
+
+
+1
+```
