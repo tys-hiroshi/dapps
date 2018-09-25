@@ -1,5 +1,7 @@
 # ERC20 token
 
+https://github.com/tys-hiroshi/EIPs/blob/master/EIPS/eip-20.md
+
 ## 
 
 ```
