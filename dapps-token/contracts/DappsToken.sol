@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
-
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+
 contract DappsToken is StandardToken {
     string public name = "DappsToken";
     string public symbol = "DTKN";
