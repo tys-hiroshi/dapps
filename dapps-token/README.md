@@ -141,4 +141,26 @@ Given Token
 
 ![Given Token](https://github.com/tys-hiroshi/dapps/blob/master/dapps-token_img/Screenshot%20from%202018-10-07%2016-25-22.jpg)
 
+```
+$ truffle console --network ropsten
+
+> d = DappsToken.at("0x1b916f28c73d10b6befd159add051be0e86e3c20")
+> d.balanceOf("0x1b916f28c73d10b6befd159add051be0e86e3c20")
+```
+
+### Transfer Token other Address
+
+Create Account on MetaMask.
+
+```
+d.transfer("", 1e18)
+```
+
+0x1b916f28c73d10b6befd159add051be0e86e3c20 to 
+
+```
+d.balanceOf("0x1b916f28c73d10b6befd159add051be0e86e3c20")
+
+d.balanceOf("")
+```
 
