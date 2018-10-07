@@ -196,3 +196,13 @@ BigNumber { s: 1, e: 18, c: [ 30000 ] }
 MetaMask Token
 
 to: '0x1b916f28c73d10b6befd159add051be0e86e3c20'
+
+# EtherScan
+
+## Crypto Kitties
+
+https://etherscan.io/address/0x06012c8cf97bead5deae237070f9587f8e7a266d#code
+
+## dapps-token (ropsten network)
+
+https://ropsten.etherscan.io/address/0x1b916f28c73d10b6befd159add051be0e86e3c20#code
