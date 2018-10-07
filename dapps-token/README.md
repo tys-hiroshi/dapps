@@ -17,6 +17,7 @@ npm WARN dapps-token@1.0.0 No repository field.
 added 1 package from 1 contributor in 0.351s
 ```
 
+
 ```
 truffle(develop)> test
 Using network 'develop'.
@@ -55,3 +56,38 @@ truffle(develop)> dappsToken.balanceOf(web3.eth.accounts[1])
 BigNumber { s: 1, e: 2, c: [ 100 ] }
 
 ```
+
+## initialize geth
+
+```
+geth --datadir ~/geth/private_net/ init ~/geth/private_net/genesis.json
+```
+
+## execute geth
+
+```
+geth --networkid "10" --nodiscover --datadir ~/geth/private_net/ --rpc --rpcaddr "localhost" --rpcport "8545" --rpccorsdomain "*" --rpcapi "eth,net,web3,personal" --targetgaslimit "20000000" console 2>> ~/geth/private_net/error.log
+```
+
+## Deploy private network
+
+```
+eth.mining
+```
+
+```
+miner.start(1)
+eth.mining
+```
+
+```
+truffle migrate --network development
+truffle console --network development
+d = DappsToken.at('')
+
+d.name()
+
+d.symbol()
+```
+
+https://infura.io/
