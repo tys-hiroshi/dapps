@@ -89,6 +89,8 @@ d.name()
 d.symbol()
 ```
 
+## Deploy ropsten network
+
 https://infura.io/
 
 https://docs.npmjs.com/getting-started/fixing-npm-permissions
@@ -124,3 +126,12 @@ Saving successful migration to network...
   ... 0x77760ddfb9c65add58187110f9cfb28259a59a242bbfb2fa148f404316a51534
 Saving artifacts...
 ```
+
+### Add DappsToken to MetaMask.
+
+DappsToken: 0x1b916f28c73d10b6befd159add051be0e86e3c20
+
+You can see below.
+
+https://github.com/tys-hiroshi/dapps/blob/master/dapps-token_img/Screenshot%20from%202018-10-07%2016-24-53.jpg
+https://github.com/tys-hiroshi/dapps/blob/master/dapps-token_img/Screenshot%20from%202018-10-07%2016-25-22.jpg
