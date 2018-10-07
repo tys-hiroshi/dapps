@@ -133,5 +133,12 @@ DappsToken: 0x1b916f28c73d10b6befd159add051be0e86e3c20
 
 You can see below.
 
-https://github.com/tys-hiroshi/dapps/blob/master/dapps-token_img/Screenshot%20from%202018-10-07%2016-24-53.jpg
-https://github.com/tys-hiroshi/dapps/blob/master/dapps-token_img/Screenshot%20from%202018-10-07%2016-25-22.jpg
+Add Token
+
+![Add Token](https://github.com/tys-hiroshi/dapps/blob/master/dapps-token_img/Screenshot%20from%202018-10-07%2016-24-53.jpg)
+
+Given Token
+
+![Given Token](https://github.com/tys-hiroshi/dapps/blob/master/dapps-token_img/Screenshot%20from%202018-10-07%2016-25-22.jpg)
+
+
