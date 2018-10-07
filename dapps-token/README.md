@@ -90,3 +90,7 @@ d.symbol()
 ```
 
 https://infura.io/
+
+https://docs.npmjs.com/getting-started/fixing-npm-permissions
+
+~/projects/tys-hiroshi/dapps$ npm install -g  truffle-hdwallet-provider
