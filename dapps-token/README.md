@@ -17,7 +17,6 @@ npm WARN dapps-token@1.0.0 No repository field.
 added 1 package from 1 contributor in 0.351s
 ```
 
-
 ```
 truffle(develop)> test
 Using network 'develop'.
