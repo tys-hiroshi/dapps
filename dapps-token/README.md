@@ -223,3 +223,4 @@ https://ropsten.etherscan.io/address/0x1b916f28c73d10b6befd159add051be0e86e3c20#
 
 
 
+https://tech.drecom.co.jp/go_to_the_dapps_world/
