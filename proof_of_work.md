@@ -14,3 +14,4 @@ hash(block,nonce) < target(-difficulty)
 
 
 https://lhartikk.github.io/jekyll/update/2017/07/13/chapter2.html
+https://tech.mercari.com/entry/2017/12/08/095000
