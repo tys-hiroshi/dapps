@@ -127,6 +127,20 @@ Saving successful migration to network...
 Saving artifacts...
 ```
 
+### Get Ether
+
+Access below Url.
+
+MetaMask Ether Faucet
+
+https://faucet.metamask.io
+
+You open metamask chrome extension.
+
+Click * request 1 ether from faucet * on https://faucet.metamask.io 
+
+Wait a minute. You can see any ether on metamask on chrome extension.
+
 ### Add DappsToken to MetaMask.
 
 DappsToken: 0x1b916f28c73d10b6befd159add051be0e86e3c20
@@ -206,3 +220,6 @@ https://etherscan.io/address/0x06012c8cf97bead5deae237070f9587f8e7a266d#code
 ## dapps-token (ropsten network)
 
 https://ropsten.etherscan.io/address/0x1b916f28c73d10b6befd159add051be0e86e3c20#code
+
+
+
