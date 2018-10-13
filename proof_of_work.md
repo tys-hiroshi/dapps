@@ -13,3 +13,4 @@ https://yu-kimura.jp/2018/06/25/proof-of-stake-implementation/
 hash(block,nonce) < target(-difficulty)
 
 
+https://lhartikk.github.io/jekyll/update/2017/07/13/chapter2.html
