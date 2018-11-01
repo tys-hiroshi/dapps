@@ -17,9 +17,10 @@
 //   // to customize your Truffle configuration!
 // };
 
+
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = your.metamask.mnemonic;
-var accessToken = your.Infra.accessToken;
+var mnemonic = $MNEMONIC;
+var accessToken = $INFURA_ACCESS_TOKEN;
 
 
 module.exports = {
