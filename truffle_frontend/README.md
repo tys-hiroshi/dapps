@@ -32,3 +32,13 @@ vue init webpack-simple
 
 npm install
 npm run dev
+
+npm install web3
+
+npm install truffle-contract
+
+
+
+You must open Metamask.
+
+npm run dev
