@@ -9,7 +9,8 @@ module.exports = function(deployer, network, accounts) {
 
     return deployer
         .then(() => {
-            return deployer.deploy(E20Token);
+            var initialSupply = 100000;
+            return deployer.deploy(E20Token, initialSupply);
         })
         .then(() => {
             return deployer.deploy(
