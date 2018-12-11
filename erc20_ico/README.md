@@ -4,6 +4,7 @@ Example of creating a crowdsale with Zeppelin Solidity v2.0
 
 Companion code to the Blogpost [https://blog.zeppelin.solutions/how-to-create-token-and-initial-coin-offering-contracts-using-truffle-openzeppelin-1b7a5dae99b6](https://blog.zeppelin.solutions/how-to-create-token-and-initial-coin-offering-contracts-using-truffle-openzeppelin-1b7a5dae99b6)
 
+```
 $ npm i -g ganache-cli
 $ npm i -E openzeppelin-solidity@2.0.0
 $ truffle compile
@@ -30,4 +31,5 @@ E20TokenCrowdsale.deployed().then(inst => inst.sendTransaction({ from: purchaser
 e20TokenInstance.balanceOf(purchaser).then(balance => purchaserGusTokenBalance = balance.toString(10))
 
 web3.fromWei(purchaserGusTokenBalance, "ether")
+```
 
