@@ -14,11 +14,15 @@ contract('E20TokenCrowdsale', function(accounts) {
             e20TokenInstance.addMinter(crowdsale.address);
             return e20TokenInstance.balanceOf(purchaser).then(function(balance) {
                 console.log(balance);
+                console.log(purchaserGusTokenBalanceEther);
+                console.log("purchaserGusTokenBalanceEther");
                 return E20TokenCrowdsale.deployed().then(function(instance) {
                     instance.sendTransaction({ from: purchaser, value: web3.toWei(5, "ether")});
                     e20TokenInstance.balanceOf(purchaser).then(function(balance) {
                         purchaserGusTokenBalance = balance.toString(10);
                         purchaserGusTokenBalanceEther = web3.fromWei(purchaserGusTokenBalance, "ether");
+                        console.log(purchaserGusTokenBalanceEther);
+                        console.log("purchaserGusTokenBalanceEther");
                     });
                 });
             });
