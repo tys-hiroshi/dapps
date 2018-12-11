@@ -25,7 +25,7 @@ contract('E20TokenCrowdsale', function(accounts) {
                 console.log("purchaserGusTokenBalanceEther");
                 console.log(purchaserGusTokenBalanceEther);
                 //e20TokenInstance.transfer(purchaser, web3.toWei(5, "ether"));
-                return e20TokenInstance.transfer(purchaser, amount);
+                return e20TokenInstance.transfer(purchaser, amount);  //transfer of https://openzeppelin.org/api/docs/token_ERC20_ERC20.html
                 //return balance;
             });
         }).then(function(istransfer) {
