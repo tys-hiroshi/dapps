@@ -33,7 +33,16 @@ contract('E20TokenCrowdsale', function(accounts) {
             console.log(istransfer);
             return e20TokenInst.balanceOf(purchaser).then(function(balance) {
                 assert.equal(balance.valueOf(), amount, "purchaser is " + amount);
+                //return null;
             });
         });
+        // .then(function() {
+        //     e20TokenInst.burnFrom(purchaser, 500);
+        // }).then(function() {
+
+        //     return e20TokenInst.balanceOf(purchaser).then(function(balance) {
+        //         assert.equal(balance.valueOf(), amount, "purchaser is " + amount);
+        //     });
+        // });
     });
 });
