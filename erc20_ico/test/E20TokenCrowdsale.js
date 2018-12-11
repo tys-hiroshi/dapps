@@ -14,9 +14,9 @@ contract('E20TokenCrowdsale', function(accounts) {
                 console.log(balance);
                 return E20TokenCrowdsale.deployed().then(function(instance) {
                     instance.sendTransaction({ from: purchaser, value: web3.toWei(5, "ether")});
+                    e20TokenInstance.balanceOf(purchaser).then(balance => purchaserGusTokenBalance = balance.toString(10));
+                    console.log(web3.fromWei(purchaserGusTokenBalance, "ether"));
                 });
-                e20TokenInstance.balanceOf(purchaser).then(balance => purchaserGusTokenBalance = balance.toString(10));
-                console.log(web3.fromWei(purchaserGusTokenBalance, "ether"));
             });
         });
     });
