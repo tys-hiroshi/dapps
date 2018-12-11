@@ -1,4 +1,4 @@
-# my-ico
+# ERC20 ICO
 
 Example of creating a crowdsale with Zeppelin Solidity v2.0
 
