@@ -1,0 +1,8 @@
+miner.start()
+eth.accounts
+eth.blockNumber
+miner.start()
+miner.stop()
+eth.mining
+miner.start()
+eth.mining

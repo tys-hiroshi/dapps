@@ -1,0 +1,35 @@
+=============== Aug 4, 2019 (JST) ===============
+20:56:05.052472 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:56:05.061594 db@open opening
+20:56:05.062112 version@stat F·[] S·0B[] Sc·[]
+20:56:05.066807 db@janitor F·2 G·0
+20:56:05.066897 db@open done T·5.264576ms
+20:56:05.068863 db@close closing
+20:56:05.069126 db@close done T·267µs
+=============== Aug 4, 2019 (JST) ===============
+20:57:42.787772 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:57:42.787926 version@stat F·[] S·0B[] Sc·[]
+20:57:42.787956 db@open opening
+20:57:42.788007 journal@recovery F·1
+20:57:42.790465 journal@recovery recovering @1
+20:57:42.795872 memdb@flush created L0@2 N·10 S·536B "H{...~\x042,v3":"r\x00\x00..~\x042,v5"
+20:57:42.798384 version@stat F·[1] S·536B[536B] Sc·[0.25]
+20:57:42.813515 db@janitor F·3 G·0
+20:57:42.813680 db@open done T·25.622325ms
+21:04:47.234988 db@close closing
+21:04:47.235096 db@close done T·106.506µs
+=============== Aug 4, 2019 (JST) ===============
+21:05:04.897414 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:05:04.897528 version@stat F·[1] S·536B[536B] Sc·[0.25]
+21:05:04.897551 db@open opening
+21:05:04.897591 journal@recovery F·1
+21:05:04.899228 journal@recovery recovering @3
+21:05:04.939055 memdb@flush created L0@5 N·671 S·32KiB "4<T..*Sp,v682":"\xff\xe1\xf7..\x92\xa2^,v681"
+21:05:04.940920 version@stat F·[2] S·33KiB[33KiB] Sc·[0.50]
+21:05:04.954143 db@janitor F·4 G·0
+21:05:04.954187 db@open done T·56.608293ms
+21:05:55.673813 table@compaction L0·2 -> L1·0 S·33KiB Q·963
+21:05:55.679554 table@build created L1@8 N·458 S·26KiB "4<T..*Sp,v682":"\xff\xe1\xf7..\x92\xa2^,v681"
+21:05:55.679637 version@stat F·[0 1] S·26KiB[0B 26KiB] Sc·[0.00 0.00]
+21:05:55.705269 table@compaction committed F-1 S-7KiB Ke·0 D·223 T·31.421083ms
+21:05:55.705408 table@remove removed @2
