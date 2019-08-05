@@ -6,3 +6,8 @@ miner.stop()
 eth.mining
 miner.start()
 eth.mining
+miner.start()
+eth.mining
+eth.blockNumber
+eth.getBlock(104)
+eth.blockNumber

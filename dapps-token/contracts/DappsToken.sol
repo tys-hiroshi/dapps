@@ -1,14 +1,13 @@
-pragma solidity ^0.4.23;
-//import "../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol";
-import "../node_modules/openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
+pragma solidity ^0.5.8;
+import "../node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 
-contract DappsToken is StandardToken {
-    string public name = "DappsToken";
-    string public symbol = "DTKN";
-    uint public decimals = 18;
+contract DappsToken is ERC20 {
+  string public name = "DappsToken";
+  string public symbol = "DTKN";
+  uint public decimals = 18;
 
-    constructor(uint initialSupply) public {
-        totalSupply_ = initialSupply;
-        balances[msg.sender] = initialSupply;
-    }
+  constructor(uint initialSupply) public {
+    _mint(msg.sender, initialSupply);
+  }
+
 }
