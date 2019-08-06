@@ -1,4 +1,4 @@
-test
+
 [ERC20 準拠のトークンの作り方](https://qiita.com/infinith4/items/199a54dd416eaa1dee51)
 
 [ERC20 準拠のトークン（OpenZeppelin v2.0.0）](https://qiita.com/infinith4/items/f7f2b6854a399dcc39f0)
