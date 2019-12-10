@@ -1,3 +1,4 @@
+```
 $ truffle develop
 truffle(develop)> migrate
 truffle(develop)> e20z2Token = E20Z2Token.at(E20Z2Token.address)
@@ -58,3 +59,4 @@ Repeat passphrase:
 "0xc7441a410ff40c6d0f7c1f0371e11d678871afbb"
 > miner.start(1)
 true
+```
