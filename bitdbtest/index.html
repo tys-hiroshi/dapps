@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+body {
+  padding: 50px;
+  font-family: arial;
+  font-size: 12px;
+}
+div {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+</style>
+<script>
+
+// The query we constructed from step 2.
+var query = {
+  "v": 3,
+  "q": {
+    "find": { "out.b0": { "op": 106 }, "out.h1": "6d02" },
+    "project": { "out.$": 1 }
+  },
+  "r": {
+    "f": "[ .[] | {msg: .out[0].s2} ]"
+  }
+}
+
+// Turn the query into base64 encoded string.
+// This is required for accessing a public bitdb node
+var b64 = btoa(JSON.stringify(query));
+var url = "https://genesis.bitdb.network/q/1FnauZ9aUH2Bex6JzdcV4eNX7oLSSEbxtN/" + b64;
+
+// Attach API KEY as header
+var header = {
+  headers: { key: [['1BppGgfomLc2oKtjyin1eQxWd6psqB1YoX']] }
+};
+
+// Make an HTTP request to bitdb.network public endpoint
+fetch(url, header).then(function(r) {
+  return r.json()
+}).then(function(r) {
+  // "r.c" stands for confirmed transactions response array
+  // Parse the response and render the results on the screen
+  r.c.forEach(function(output) {
+    var div = document.createElement("div");
+    div.innerHTML = output.msg;
+    document.body.appendChild(div)
+  })
+})
+</script>
+</head>
+<body>
+</body>
+</html>
