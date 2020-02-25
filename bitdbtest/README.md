@@ -50,3 +50,12 @@ A protocol to reference previously uploaded media from another on-chain media.
 
 
 https://bitcom.bitdb.network/#/?id=bitcom
+
+
+https://b.bitdb.network/
+
+memo.cash(other apps)
+|
+B
+|
+bitdb
