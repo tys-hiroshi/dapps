@@ -1,9 +1,10 @@
 
 https://bit.planaria.network/#/?id=bit
+
 https://bottle.bitdb.network/
 
-
 https://docs.bitdb.network/docs/quickstart_v3
+
 https://docs.bitdb.network/docs/install
 
 ```
