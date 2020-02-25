@@ -33,3 +33,17 @@ https://genesis.bitdb.network/query/1FnauZ9aUH2Bex6JzdcV4eNX7oLSSEbxtN/ewogICJ2I
 
 https://memo.cash/protocol
 
+https://docs.planaria.network/#/pc
+
+https://memo.cash/about
+
+
+https://github.com/unwriter/B
+
+B is an OP_RETURN protocol to store and reference arbitrary data on Bitcoin.
+
+The design goal:
+
+The simplest protocol to upload arbitrary media to the blockchain
+
+A protocol to reference previously uploaded media from another on-chain media.
