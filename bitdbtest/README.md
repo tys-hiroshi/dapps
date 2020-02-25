@@ -47,3 +47,6 @@ The design goal:
 The simplest protocol to upload arbitrary media to the blockchain
 
 A protocol to reference previously uploaded media from another on-chain media.
+
+
+https://bitcom.bitdb.network/#/?id=bitcom
