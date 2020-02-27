@@ -69,15 +69,24 @@ https://tkstock.site/2019/09/09/post-3649/
 
 https://tkstock.site/2019/08/11/post-3509/
 
-https://github.com/unwriter/datapay
+------
 
 datapayがつかっているbitcore-explorers のパスが /api/addrs/utxo になっていて接続できない。
 
+https://github.com/unwriter/datapay
+
+
 https://www.mattercloud.net/#get-api-key
 
+------
+
+Bitcoin cash?
 
 https://github.com/bitcoinfiles/bitcoinfiles-sdk
 
+-----------
+
+これは多分Bitcoin用
 
 https://github.com/simpleledger/bitcoinfilesjs
 
