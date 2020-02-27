@@ -99,3 +99,5 @@ https://bico.media/
 https://github.com/bico-media/add/blob/master/add-d.html
 
 api.bitindex.network をつかっている。
+
+https://www.bitindex.network/developers/api-documentation-v3.html
