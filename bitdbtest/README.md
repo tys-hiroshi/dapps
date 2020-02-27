@@ -95,3 +95,7 @@ https://github.com/simpleledger/bitcoinfilesjs
 Bitcoin sv用
 
 https://bico.media/
+
+https://github.com/bico-media/add/blob/master/add-d.html
+
+api.bitindex.network をつかっている。
