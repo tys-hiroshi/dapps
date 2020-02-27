@@ -101,3 +101,16 @@ https://github.com/bico-media/add/blob/master/add-d.html
 api.bitindex.network をつかっている。
 
 https://www.bitindex.network/developers/api-documentation-v3.html
+
+でも、bitindexは非推奨で、mattercloudを使えって書いてある。
+
+https://github.com/BitIndex/bitindex-sdk
+```
+Note: BitIndex is now part of MatterCloud.
+
+[Deprecated - see below] BitIndex Javascript SDK
+Replaced by MatterCloudJS
+Get it at: [https://github.com/mattercloud/mattercloudjs]
+```
+
+
