@@ -1,6 +1,6 @@
 var bsv = require('bsv')
 var Mnemonic = require('bsv-mnemonic')
-var datapay = require('datapay')
+//var datapay = require('datapay')
 
 //let privKey = bsv.PrivateKey.fromRandom()
 let privateKey = bsv.PrivateKey.fromRandom('testnet')
@@ -54,11 +54,67 @@ var mattercloud = require('mattercloudjs').instance(options);
 // // })
 // getBalanceAsync()
 
-function r(){}
-r(async () => {
-// When content loaded in page on ready, then run this code....
-mattercloud.setApiKey("2bUeAGavrUkHLAT8ScNHd3o8fYHj96SQTjukDrq72sfHHaZvCSZXWokVds76UPfGKf");
-var result = await mattercloud.getUtxos('12XXBHkRNrBEb7GCvAP4G8oUs5SoDREkVX');
-console.log('result', result);
-//document.getElementById('results').innerHTML = JSON.stringify(result);
+// function r(){}
+// r(async () => {
+// // When content loaded in page on ready, then run this code....
+// mattercloud.setApiKey("2bUeAGavrUkHLAT8ScNHd3o8fYHj96SQTjukDrq72sfHHaZvCSZXWokVds76UPfGKf");
+// var result = await mattercloud.getUtxos('12XXBHkRNrBEb7GCvAP4G8oUs5SoDREkVX');
+// console.log('result', result);
+// //document.getElementById('results').innerHTML = JSON.stringify(result);
+// });
+
+// resolve1!!をreturnしているため、この値がresolveされる
+// async function resolveSample() {
+//     return await mattercloud.getBalance('12XXBHkRNrBEb7GCvAP4G8oUs5SoDREkVX');
+    
+// }
+
+// resolveSampleがPromiseを返し、resolve!!がresolveされるため
+// then()が実行されコンソールにresolve!!が表示される
+// resolveSample().then(value => {
+//     console.log(value);
+// });
+
+// try {
+//     (async () =>{
+//             await Promise.reject()
+//     })()
+// }catch (e){
+//     console.log('ERROR!', e) // これは出力されない。代わりに...
+// }
+// console.log('END');
+
+
+
+// let mattercloud = require('mattercloudjs').instance({
+//     api_key: '4ZiBSwCzjgkCzDbX9vVV2TGqe951CBrwZytbbWiGqDuzkDETEkLJ9DDXuNMLsr8Bpj'
+//   })
+  
+  
+async function broadcast(tx)
+{
+    const res = await mattercloud.sendRawTx(tx);
+    return res.txid
+}
+
+async function getUtxos(addr)
+{
+    const res = await mattercloud.getUtxos([addr])
+    return res
+}
+
+async function getBalance(addr)
+{
+    const res = await mattercloud.getBalance(addr);
+    return res
+}
+
+
+// getUtxos("12XXBHkRNrBEb7GCvAP4G8oUs5SoDREkVX").then(result => {
+//     console.log(result); //
+// });
+
+console.log("getBalance")
+getBalance("12XXBHkRNrBEb7GCvAP4G8oUs5SoDREkVX").then(result => {
+    console.log(result); //
 });
