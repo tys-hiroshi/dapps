@@ -16,7 +16,7 @@ print(uploader.network)
 # filepath = "img/bitcoinsv.png"
 # res = uploader.upload_b(filepath)
 
-filepath = "contents/bsvuploadtest.txt"
+#filepath = "contents/bsvuploadtest.txt"
 #res = uploader.upload_b(filepath)
 #print(res)
 #https://testnet.bitcoincloud.net/tx/47f0706cdef805761a975d4af2a418c45580d21d4d653e8410537a3de1b1aa4b
@@ -25,6 +25,7 @@ filepath = "contents/bsvuploadtest.txt"
 # 232320426974636f696e207376206f6e20746573746e65740a0a49276d204869726f0a がHexなので変換すると表示される。
 #curl --location --request GET  "https://api.whatsonchain.com/v1/bsv/test/tx/hash/1c7df64da80389b1f5697975dac5cd1fc800ff25387210743746bee5393b1a5a"
 #curl --location --request GET  "https://api.whatsonchain.com/v1/bsv/test/tx/hash/47f0706cdef805761a975d4af2a418c45580d21d4d653e8410537a3de1b1aa4b"
+#curl --location --request GET  "https://api.whatsonchain.com/v1/bsv/test/tx/hash/7a8293c6d779222280766d4fb52c097085fca847111051e6540701ff76c9b897"
 
 # address = "mnoTQaiqDBjUG6WWAUwhFycirbrKYUMgmU"
 
