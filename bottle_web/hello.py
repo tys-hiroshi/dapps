@@ -1,13 +1,12 @@
 # -*- coding:utf-8 -*-
 
-from bottle import route, run
+from bottle import route, run, template
 
+@route('/hello/<name>')
+def index(name):
+    return template('<b>Hello {{name}}</b>!', name=name)
 
-@route('/hello')
-def hello():
-    return "Hello World!"
+run(host='localhost', port=8080)
 
+# http://localhost:8080/hello/aaa
 
-run(host='localhost', port=8080, debug=True)
-
-# http://localhost:8080/hello
