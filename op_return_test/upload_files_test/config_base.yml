@@ -1,0 +1,2 @@
+testnet:
+  privatekey_wif: 'your private key wif format'  ##get from mnemonic_to_privatekey.js
