@@ -51,12 +51,38 @@ print(tprvbyte)
 tprvbytehex = binascii.hexlify(tprvbyte)
 print(tprvbytehex)
 
+# https://github.com/trezor/python-mnemonic/blob/master/mnemonic/mnemonic.py
+# Note: I defined to_hd_master_key_testnet() method
+# the method definition is below.
 
+# @classmethod
+#     def to_hd_master_key_testnet(cls, seed):
+#         if len(seed) != 64:
+#             raise ValueError("Provided seed should have length of 64")
+
+#         # Compute HMAC-SHA512 of seed
+#         seed = hmac.new(b"Bitcoin seed", seed, digestmod=hashlib.sha512).digest()
+
+#         # Serialization format can be found at: https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#Serialization_format
+#         xprv = b'\x045\x83\x94'  # Version for private testnet
+#         xprv += b"\x00" * 9  # Depth, parent fingerprint, and child number
+#         xprv += seed[32:]  # Chain code
+#         xprv += b"\x00" + seed[:32]  # Master key
+
+#         # Double hash using SHA256
+#         hashed_xprv = hashlib.sha256(xprv).digest()
+#         hashed_xprv = hashlib.sha256(hashed_xprv).digest()
+
+#         # Append 4 bytes of checksum
+#         xprv += hashed_xprv[:4]
+
+#         # Return base58
+#         return b58encode(xprv)
 
 masterkey_testnet = mnemonic.Mnemonic.to_hd_master_key_testnet(seed)
 print(masterkey_testnet)  ##prefix is tprv. Base58エンコードした値
 
-# I cant find bsvbip32 package on pypi.
+# Note: I cant find bsvbip32 package on pypi.
 # then I install from source code ( https://github.com/AustEcon/bsvbip32 )
 # 1.clone repository
 # 2.python3 setup.py develop
