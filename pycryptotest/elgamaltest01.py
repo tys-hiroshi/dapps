@@ -4,6 +4,8 @@ from Crypto.PublicKey import ElGamal
 from Crypto.Util.number import GCD
 from Crypto.Hash import SHA
 
+## [python2]https://pythonhosted.org/pycrypto/Crypto.PublicKey.ElGamal-module.html
+
 message = b"Hello"
 key = ElGamal.generate(1024, Random.new().read)
 # h = SHA.new()
