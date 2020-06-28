@@ -25,17 +25,17 @@ print("random")
 aaaa = key.p - 1
 print(aaaa)
 k = random.StrongRandom().randint(1, int(aaaa))
-print(k)
-while 1:
-    k = random.StrongRandom().randint(1, int(aaaa))
-    print("k")
-    print(k)
-    print("key.p")
-    print(key.p)
-    gcd = GCD(k, aaaa)
-    print(gcd)
-    if gcd == 1:
-        break
+# print(k)
+# while 1:
+#     k = random.StrongRandom().randint(1, int(aaaa))
+#     print("k")
+#     print(k)
+#     print("key.p")
+#     print(key.p)
+#     gcd = GCD(k, int(aaaa))
+#     print(gcd)
+#     if gcd == 1:
+#         break
 
 h = key.encrypt(message, k)
 d = key.decrypt(h)
