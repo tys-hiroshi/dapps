@@ -1,0 +1,4 @@
+{
+    "python.envFile": "${workspaceFolder}/.venv",
+    "python.pythonPath": "/Users/maccat/projects/github/tys-hiroshi/dapps/pycryptotest/.venv/bin/python3"
+}
