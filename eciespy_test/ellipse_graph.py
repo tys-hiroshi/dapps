@@ -239,6 +239,6 @@ c = CurveFp(p,a,b)
 # G を c 上の点(10,13)とする
 G = Point(c, 10, 13)
 current = G
-for i in range(1,35):
+for i in range(1,91):
     print("{}G:¥t{}".format(i,current))
     current = current + G
