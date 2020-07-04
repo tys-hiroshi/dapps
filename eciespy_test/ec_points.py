@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# https://tex2e.github.io/blog/crypto/point-of-elliptic-curve-over-GF
+
 def quadratic_residue(a, p):
     return pow(a, (p - 1) // 2, p) == 1
 
@@ -63,3 +65,20 @@ disply_points(2, 17, p)
 # points:
 # [(1, 2), (1, 29), (3, 8), (3, 23), (5, 4), (5, 27), (6, 4), (6, 27), (7, 8), (7, 23), (8, 4), (8, 27), (9, 2), (9, 29), (10, 15), (10, 16), (12, 8), (12, 23), (13, 15), (13, 16), (17, 2), (17, 29), (19, 1), (19, 30), (20, 4), (20, 27), (21, 2), (21, 29), (22, 15), (22, 16), (23, 4), (23, 27), (24, 1), (24, 30), (27, 2), (27, 29), (29, 1), (29, 30), (30, 15), (30, 16)]
 # 40
+
+
+p = 5
+disply_points(1, 1, p)
+
+# x =  0, z = 1, quadratic_residue( 0, 5)? = True, y = 1, 4
+# x =  1, z = 3, quadratic_residue( 1, 5)? = False
+# x =  2, z = 1, quadratic_residue( 2, 5)? = True, y = 1, 4
+# x =  3, z = 1, quadratic_residue( 3, 5)? = True, y = 1, 4
+# x =  4, z = 4, quadratic_residue( 4, 5)? = True, y = 4, 1
+# points:
+# [(0, 1), (0, 4), (2, 1), (2, 4), (3, 1), (3, 4), (4, 1), (4, 4)]
+# 8
+
+p = 11
+
+disply_points(1, 6, p)
