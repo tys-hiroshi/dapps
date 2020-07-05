@@ -1,0 +1,4 @@
+API_CONFIG: 
+  AZURE_INFO:
+    ACCOUNT_NAME: ""
+    ACCOUNT_KEY: ""
