@@ -14,20 +14,6 @@ async def make_container(loop, connection_string, container_name):
     #await task_make_container(connection_string, container_name)
     return True
 
-async def task_upload_blob(connection_string, container_name, local_file_name, data):
-    # Create the BlobServiceClient object which will be used to create a container client
-    blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-    # Create a blob client using the local file name as the name for the blob
-    blob_client = blob_service_client.get_blob_client(container=container_name, blob=local_file_name)
-    await blob_client.upload_blob(data)
-    return True
-
-async def blob_uploader(loop, connection_string, container_name, local_file_name, data):
-    print("\nUploading to Azure Storage as blob:\n\t" + local_file_name)
-    await loop.create_task(task_upload_blob(connection_string, container_name, local_file_name, data))
-    #await task_make_container(connection_string, container_name)
-    return True
-
 
 if __name__ == "__main__":
     try:
@@ -55,8 +41,16 @@ if __name__ == "__main__":
 
         # # blob_service_client = BlobServiceClient(account_url="https://bnodestr.blob.core.windows.net", credential=sas_token)
 
+        # Create the BlobServiceClient object which will be used to create a container client
+        blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+        # Create a blob client using the local file name as the name for the blob
+        blob_client = blob_service_client.get_blob_client(container=container_name, blob=local_file_name)
+
+        print("\nUploading to Azure Storage as blob:\n\t" + local_file_name)
+
+        # Upload the created file
         with open(upload_file_path, "rb") as data:
-            loop.run_until_complete(blob_uploader(loop, connection_string, container_name, upload_file_path, data))
+            blob_client.upload_blob(data)
 
         
     finally:
