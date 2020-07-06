@@ -68,16 +68,6 @@ if __name__ == "__main__":
         file.write("Hello, World!")
         file.close()
 
-        # # sas_token = generate_account_sas(
-        # #     account_name="bnodestr",
-        # #     account_key="qeuflf0W18D9zSGCUIDoTJ1uK6V58ZlVbiozurnnqHe8088jDyqmLJtPTREWEB1/35bGRkT5S5VCok5nfTFPfg==",
-        # #     resource_types=ResourceTypes(service=True),
-        # #     permission=AccountSasPermissions(read=True),
-        # #     expiry=datetime.utcnow() + timedelta(hours=1)
-        # # )
-
-        # # blob_service_client = BlobServiceClient(account_url="https://bnodestr.blob.core.windows.net", credential=sas_token)
-
         # Create the BlobServiceClient object which will be used to create a container client
         blob_service_client = BlobServiceClient.from_connection_string(CONNECTION_STRING)
         # Create a blob client using the local file name as the name for the blob
@@ -95,13 +85,4 @@ if __name__ == "__main__":
     finally:
         #loop.close()
         print("final")
-
-
-#loop.create_task(make_container(connection_string, container_name))
-
-# blob = BlobClient.from_connection_string(conn_str="<connection_string>", container_name="my_container", blob_name="my_blob")
-
-# with open("./SampleSource.txt", "rb") as data:
-#     await blob.upload_blob(data)
-
 
