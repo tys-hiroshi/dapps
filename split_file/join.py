@@ -29,11 +29,17 @@ def divide_file(filePath, chunkSize):
 
 # 渡されたファイルリストの順序で１つのファイルに結合する
 def join_file(fileList, filePath):
-
     with open(filePath, 'wb') as saveFile:
         for f in fileList:
             data = open(f, "rb").read()
             saveFile.write(data)
+            saveFile.flush()
+
+# 渡されたファイルリストの順序で１つのファイルに結合する
+def join_stream(streamList, filePath):
+    with open(filePath, 'wb') as saveFile:
+        for f in streamList:
+            saveFile.write(f)
             saveFile.flush()
 
 # 指定された部分データをファイルから取得する
@@ -54,6 +60,13 @@ if __name__ == "__main__":
     target = "teststring.txt"
     # 分割したファイルを結合
     join_file(fileList, 'join_' + target)
+    streamList = []
+    for file in fileList:
+        stream = open(file, 'rb').read()
+        streamList.append(stream)
+    
+    # 分割したstreamを結合
+    join_stream(streamList, 'join_' + target)
 
     # 0-9999 の 10000 Byte を取り出す
     data01 = partial_content(target, 0, 9999)
